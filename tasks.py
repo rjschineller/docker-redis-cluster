@@ -57,7 +57,7 @@ def _docker_pull(config):
     """
     c, version = config
     print(f" -- Starting docker pull for version : {version}")
-    pull_command = f"docker pull grokzen/redis-cluster:{version}"
+    pull_command = f"docker pull rjsiii/redis-cluster:{version}"
     c.run(pull_command)
 
 
@@ -67,7 +67,7 @@ def _docker_build(config):
     """
     c, version = config
     print(f" -- Starting docker build for version : {version}")
-    build_command = f"docker build --build-arg redis_version={version} -t grokzen/redis-cluster:{version} ."
+    build_command = f"docker build --build-arg redis_version={version} -t rjsiii/redis-cluster:{version} ."
     c.run(build_command)
 
 
@@ -77,7 +77,7 @@ def _docker_push(config):
     """
     c, version = config
     print(f" -- Starting docker push for version : {version}")
-    build_command = f"docker push grokzen/redis-cluster:{version}"
+    build_command = f"docker push rjsiii/redis-cluster:{version}"
     c.run(build_command)
 
 
