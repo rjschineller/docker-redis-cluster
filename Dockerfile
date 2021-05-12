@@ -1,7 +1,7 @@
 # Build based on redis:6.0 from 2020-05-05
 FROM redis@sha256:f7ee67d8d9050357a6ea362e2a7e8b65a6823d9b612bc430d057416788ef6df9
 
-LABEL maintainer="Johan Andersson <Grokzen@gmail.com>"
+LABEL maintainer="Richard Schineller <rjs@rjsiii.com>"
 
 # Some Environment Variables
 ENV HOME /root

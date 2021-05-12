@@ -5,7 +5,7 @@ if [ "$1" = 'redis-cluster' ]; then
     IP="${2:-$IP}"
 
     if [ -z "$IP" ]; then # If IP is unset then discover it
-        IP=$(hostname -I)
+        IP=$(hostname -i)
     fi
 
     echo " -- IP Before trim: '$IP'"
